@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Kortros</string>
+    <string name="title_search">Поиск</string>
+    <string name="title_love">Избранное</string>
+    <string name="title_developer">Застройщик</string>
+    <string name="title_news">Новости</string>
+    <string name="title_help">Помощь</string>
+
+
+    <string name="title_home">Помощь</string>
+
+
+    <string name="search_choice">Выберите город или воспользуйтесь\nудобным фильтром</string>
+    <string name="search_fragment">Search fragment</string>
+    <string name="search_town">Город</string>
+    <string name="search_filter">Фильтр</string>
+
+    <string name="search_filter_clear">Очистить</string>
+
+    <string name="search_filter_complex">Жилой комплекс</string>
+    <string name="search_filter_house">Дом</string>
+    <string name="search_filter_flats">Количество комнат</string>
+    <string name="search_filter_square">Площадь</string>
+    <string name="search_filter_floor">Этаж</string>
+    <string name="search_filter_price">Цена</string>
+    <string name="search_filter_additional">Дополнительные</string>
+
+    <string name="search_filter_flats_1">Квартиры по акции</string>
+    <string name="search_filter_flats_2">Квартиры по с отделкой</string>
+
+    <string name="search_filter_studia">Студия</string>
+    <string name="search_filter_1">1</string>
+    <string name="search_filter_2">2</string>
+    <string name="search_filter_3">3</string>
+    <string name="search_filter_4">+4</string>
+
+    <string name="search_filter_m2">м&#178;</string>
+    <string name="search_filter_rubl">&#8381;</string>
+    <string name="search_filter_from">От</string>
+    <string name="search_filter_to">До</string>
+    <string name="search_filter_section">Секция дома</string>
+    <string name="search_filter_town">Город:</string>
+    <string name="search_filter_add_params">Дополнительные параметры</string>
+    <string name="search_filter_add_params_offer">Квартиры по акции</string>
+    <string name="search_filter_add_params_finish">Квартиры с отделкой</string>
+
+    <string name="search_gk_choice">до 30 лет\n- Первоначальный взнос: от 15%\n- Минимальный размер кредита:\n300 000 рублей РФ</string>
+
+    <string name="bilder_text1">В 2015 году Группа компаний «КОРТРОС» поставила себе цель перейти к совершенно новому подходу к развитию продукта. Новый продукт обладает всеми необходимыми потребительскими характеристиками для комфортной жизни жильцов и включает в себя не только новую архитектуру, общественные пространства, функциональные планировочные решения, стандарты по благоустройству, но и предоставляет покупателю совершенно другие, исключительные, стандарты обслуживания.</string>
+    <string name="bilder_text2">Работая над проектами, мы стремимся учесть индивидуальные потребности каждого клиента, персонифицировать предложение. Это отражается в разнообразии планировочных решений, функциональности каждого квадратного метра будущей квартиры, в предложении различных типов отделки, в зонировании благоустройства с учетом различных групп жителей, в создании общественных пространств для жителей не только наших комплексов, но и для жителей всего города, в реализации передовых инженерных энергоэффективных систем зданий.</string>
+    <string name="bilder_text3">Важнейшая состовляющая Продукта ГК КОРТРОС - "Умная квартира КОРТРОС". Это не простое коробочное решение, а целый комплекс объединенных нителлектуальных систем, которые устанавливаются в новостройках компании, чтобы делать ваш быт комфортнее, безопаснее и экономичнее. Скажем больше - это философия, главная идея которой - жить в доме, который заботится о вас.</string>
+    <string name="bilder_text4">109028, Москва, Подкопаевский пер., д. 4\n+7 495 933 99 31  </string>
+
+    <string name="flat_call">Позвонить</string>
+
+    <string name="chats">Чаты</string>
+    <string name="title_chats">Чаты</string>
+
+
+</resources>

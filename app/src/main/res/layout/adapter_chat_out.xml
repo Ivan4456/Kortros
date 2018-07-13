@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_chat_out_ID"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="false"
+    android:layout_centerHorizontal="false"
+    android:layout_centerVertical="false"
+    android:layout_gravity="top"
+    android:gravity="left"
+    android:orientation="horizontal"
+    android:paddingRight="80dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bubble_left_gray"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_Message_Chat_out_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="2dp"
+
+            android:gravity="right|center"
+            android:text="Сообщение"
+            android:textColor="@color/Black"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/textView_DataTime_Chat_out_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="2dp"
+
+            android:gravity="left"
+            android:maxLines="2"
+            android:text="время"
+            android:textColor="@color/Gray"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

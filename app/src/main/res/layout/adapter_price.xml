@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/List_Flats_ID"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:layout_alignParentRight="false"
+    android:layout_centerHorizontal="false"
+    android:layout_centerVertical="false"
+    android:layout_gravity="top|left"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/corner1">
+
+        <TextView
+            android:id="@+id/textView_Count_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:text="26 квартир" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="false"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text=">"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TextView_Title_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Студия" />
+
+            <TextView
+                android:id="@+id/TextView_Text_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="от 2.3 до 3.8 млн.руб." />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

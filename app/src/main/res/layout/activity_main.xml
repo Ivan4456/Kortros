@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"
+        android:layout_alignParentTop="true">
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:addStatesFromChildren="true"
+        android:alwaysDrawnWithCache="false"
+        android:animateLayoutChanges="true"
+        android:animationCache="false"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:clipToPadding="true"
+        android:duplicateParentState="true"
+        android:fadeScrollbars="false"
+        android:filterTouchesWhenObscured="false"
+        android:fitsSystemWindows="true"
+        android:focusableInTouchMode="true"
+        android:hapticFeedbackEnabled="false"
+        android:isScrollContainer="false"
+        android:keepScreenOn="false"
+        android:longClickable="false"
+        android:measureAllChildren="false"
+        android:saveEnabled="true"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:soundEffectsEnabled="false"
+        android:splitMotionEvents="false"
+        android:textSize="6dp"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:barrierAllowsGoneWidgets="false"
+        app:chainUseRtl="false"
+        app:itemIconTint="@drawable/menu_item_selector_drawer"
+        app:itemTextColor="@drawable/menu_item_selector_drawer"
+        app:layout_constrainedHeight="false"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation"
+        tools:itemIconTint="@android:color/holo_red_dark" />
+
+</android.support.constraint.ConstraintLayout>

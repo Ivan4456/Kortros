@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/List_Flats_ID"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_alignParentRight="false"
+    android:layout_centerHorizontal="false"
+    android:layout_centerVertical="false"
+    android:layout_gravity="top|left"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/corner3">
+
+        <ImageView
+            android:id="@+id/imageView_ipoteka_ID"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/layout_ipoteka_ID"
+            android:layout_margin="8dp" />
+
+        <LinearLayout
+            android:id="@+id/layout_ipoteka_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingLeft="80dp">
+
+            <TextView
+                android:id="@+id/textView_ipoteka_title_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Сбербанк России"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView_ipoteka_text_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="4dp"
+                android:minHeight="70dp"
+                android:text="@string/search_gk_choice" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

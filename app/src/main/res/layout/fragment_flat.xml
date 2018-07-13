@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    tools:context=".SearchTownFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="1dp"
+            android:background="@android:color/background_light">
+
+            <RelativeLayout
+                android:id="@+id/linerlayout_back_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="13dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/back_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView_title_ID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/sf_display_medium"
+                    android:text="Кортрос"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_Status_Heart_ID"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true">
+
+                <ImageView
+                    android:id="@+id/imageView_Status_Heart_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:padding="12dp"
+                    android:src="@drawable/heart_black" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_map_ID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteY="466dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeRoot_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteY="466dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#e2dede"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@android:color/white"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageView_flat_big_ID"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:adjustViewBounds="true"
+                                        android:src="@drawable/empty_image" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#e2dede"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignLeft="@+id/imageView_flats_ID"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="@android:color/white"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/textView_flats_rooms_ID"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="false"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:layout_marginTop="20dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/sf_regular"
+                                            android:gravity="left|center"
+                                            android:text="Заголовок"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="14dp" />
+
+                                        <TextView
+                                            android:id="@+id/textView_flat_text_ID"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="false"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/sf_regular"
+                                            android:gravity="left|center"
+                                            android:text="Текст"
+                                            android:textColor="@android:color/darker_gray"
+                                            android:textSize="14dp" />
+
+                                        <TextView
+                                            android:id="@+id/textView_flat_price_ID"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="false"
+                                            android:layout_marginBottom="30dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/sf_regular"
+                                            android:gravity="left|center"
+                                            android:text="Цена"
+                                            android:textColor="#060606"
+                                            android:textSize="18dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="@android:color/white"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@android:color/white"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/textView_flat_room_ID"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="20dp"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginRight="10dp"
+                                                android:layout_marginTop="30dp"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/sf_regular"
+                                                android:text="Количество комнат"
+                                                android:textColor="@android:color/black" />
+
+                                            <TextView
+                                                android:id="@+id/textView_flat_count_room_ID"
+                                                android:layout_width="100dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="10dp"
+                                                android:layout_marginTop="30dp"
+                                                android:layout_weight="1"
+                                                android:gravity="right"
+                                                android:textColor="@android:color/black" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/textView_flat_number_ID"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="50dp"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginRight="10dp"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/sf_regular"
+                                                android:text="Номер квартиры"
+                                                android:textColor="@android:color/black" />
+
+                                            <TextView
+                                                android:id="@+id/textView_flat_room_n_ID"
+                                                android:layout_width="100dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="10dp"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/sf_regular"
+                                                android:gravity="right"
+                                                android:textColor="@android:color/black" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@android:color/white"
+                                    android:orientation="vertical">
+
+                                    <Button
+                                        android:id="@+id/button_call_ID"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginLeft="11dp"
+                                        android:layout_marginRight="11dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/corner4"
+                                        android:capitalize="none"
+                                        android:fontFamily="@font/sf_display_medium"
+                                        android:shadowColor="@android:color/white"
+                                        android:text="Позвонить"
+                                        android:textColor="@android:color/white" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@android:color/white"
+                                    android:orientation="vertical">
+
+                                    <Button
+                                        android:id="@+id/button_book_ID"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginLeft="11dp"
+                                        android:layout_marginRight="11dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/corner4"
+                                        android:fontFamily="@font/sf_display_medium"
+                                        android:shadowColor="@android:color/white"
+                                        android:text="Забронировать"
+                                        android:textColor="@android:color/white" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="56dp"
+                                    android:background="@android:color/white"
+                                    android:orientation="vertical">
+
+                                    <Button
+                                        android:id="@+id/button_action_ID"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginLeft="11dp"
+                                        android:layout_marginRight="11dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/corner4"
+                                        android:fontFamily="@font/sf_display_medium"
+                                        android:shadowColor="@android:color/white"
+                                        android:text="Заказать экскурсию"
+                                        android:textColor="@android:color/white" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </ScrollView>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
